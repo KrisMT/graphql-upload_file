@@ -1,6 +1,9 @@
 const {gql} = require('apollo-server-express')
 
 const typedefs = gql`
+    type Subscription {
+        uploadCreated: File
+    }
     type Query {
         uploadedFiles : [File]
     }
